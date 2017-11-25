@@ -1,6 +1,7 @@
-class Plateau :
+class plateau :
 
     def __init__(self):
-        Plateau = [0, 1, 0, 1]
-                  [0, 1, 0, 1]
-                  [0, 1, 0, 1]
+        Plateau = []
+        for i in range(3):
+            Plateau.append([0] and [1]*4)
+        print(Plateau)
