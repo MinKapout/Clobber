@@ -1,2 +1,4 @@
 class joueur:
-    def __init__(self)
+
+    def __init__(self, nom):
+        self.nom = nom
