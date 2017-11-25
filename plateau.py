@@ -1,4 +1,6 @@
-class plateau :
+from pion import Pion
+
+class Plateau :
 
     def __init__(self):
         Plateau = []

@@ -1,4 +1,5 @@
-import joueur
+from plateau import Plateau
+from joueur import Joueur
 
 class Partie:
 
