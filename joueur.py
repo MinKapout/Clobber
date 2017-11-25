@@ -7,7 +7,7 @@ class Joueur:
         self.monTour = False
         self.myPion = []
         for idPion in range(6):
-            self.myPion.append(Pion(idPion, imgCase))
+            self.myPion.append(Pion(idPion, imgCase, self))
 
     def changeMyTurn(self):
         if(self.monTour):

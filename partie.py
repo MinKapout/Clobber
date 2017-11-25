@@ -43,13 +43,21 @@ class Partie:
                     decalage = 0
                 posX += 1
                 posY = 0+decalage
-        self.plateau.affichagePlateau()
-
 
         while(self.gaming()):
             print(self.plateau.affichagePlateau())
 
     def gaming(self):
-        self.j1.changeMyTurn()
+        self.plateau.affichagePlateau()
+        if(self.j1.monTour):
+            print("It's "+self.j1.nom+" turn : \n\r")
+            self.plateau.askDeplacement(self.j1.nom)
+            self.j1.changeMyTurn()
+        elif(self.j2.monTour):
+            print("It's "+self.j2.nom+" turn : \n\r")
+            self.plateau.askDeplacement(self.j1.nom)
+            self.j2.changeMyTurn()
+
+        return True
 
 
